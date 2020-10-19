@@ -1,0 +1,84 @@
+<html>
+<head>
+    <script>
+    function abc()
+        {
+            var pwd= document.forms[0].txtpass.value;
+            var cpwd= document.forms[0].txtconfirmpass.value;
+          
+            if(pwd==cpwd)
+                {
+                    return true;
+                }
+            else{
+                alert("password and confirm password must be same");
+                return false;
+            }
+        }
+    </script>
+    <style>
+        #aa{
+            padding-left: 5px;
+            width: 255px;
+           
+           
+           
+        }
+    #com
+        {margin-top: 0px;
+            padding-top: 50px;
+            padding-left: 500px;
+            height: 780px;
+            margin-top: 15px;
+          background-image: url(dog.jpg);
+            background-size: cover;
+        }
+        .bu{
+            background-color: burlywood;
+            width: 100px;
+            padding-left: 0px;
+            height: 30px;
+            margin-bottom: 10px;
+            text-emphasis-color: black;
+            text-align: center;
+            margin-left: 80px;
+        }
+        #d
+        {
+           width: 355px;
+            background-color: white;
+            margin: 0px;
+            
+        }
+    </style>
+    </head>
+<body>
+    <div id="com">
+    <form action="navigation.html" onsubmit=" return abc()">
+        
+        <div id="aa">
+            <div style="text-align: center; margin: 12px 0 12px 0">
+        <img src="ac/login.png" alt="login" style="width: 50%; border-radius: 50%">
+        
+        </div>
+       <h2><label> USER NAME</label><br>
+           <input type="text" placeholder="enter your name" name="username" required style="width: 250px; height: 30px; font-size: 17px; padding-left: 5px"><br>
+           
+           <label for="id"><b>EMAIL ID</b></label><br>
+           <input type="email" placeholder="******@gmail.com" name="id" required style="width: 250px; height: 30px; font-size: 17px; padding-left: 5px"><br>
+           
+<label>MOBILE NO. </label><br>
+           <input type="number" placeholder="******8755" name="mono" required style="width: 250px; height: 30px; font-size: 17px; padding-left: 5px;"><br>
+       <label>PASSWORD</label><br>
+           <input type="password" placeholder="*********" name="txtpass" style="width: 250px; height: 30px; font-size: 17px; padding-left: 5px" required><br>
+           <label>CONFORM PASSWORD<br>
+           </label><input type="password" placeholder="*********" name="txtconfirmpass" style="width: 250px; height: 30px; font-size: 17px; padding-left: 5px" required><br></h2>
+            
+            <input type="submit" onclick="abc()" style="width: 70px; height: 30px; background-color: navajowhite;">
+                <a href="navigation.html">
+                    <button type="button" class="bu">cancel</button></a>
+        </form>
+        
+    </div>
+    </body>
+</html>
